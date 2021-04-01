@@ -2,7 +2,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { log } from "./loggingService";
 
-axios.defaults.baseURL = "http://myserverauth.herokuapp.com/api/";
+axios.defaults.baseURL = "https://myserverauth.herokuapp.com/api/";
 
 axios.interceptors.response.use(null, (error) => {
   if (
